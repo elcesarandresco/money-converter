@@ -23,30 +23,25 @@ Bienvenido al conversor de monedas a dólares, elija una divisa para comenzar:
 
 """
 opcion = int(input(menu))
+moneda = dolar[opcion]
 
 if opcion == 1:
 
-    moneda = dolar[1]
-    divisa = "Pesos Colombianos"
-    monto = float(input(frase(divisa)))
-    
+    divisa = "Pesos Colombianos" 
 
 elif opcion == 2:
 
-    moneda = dolar[3]
     divisa = "Pesos Mexicanos"
-    monto = float(input(frase(divisa)))
 
 elif opcion == 3:
 
-    moneda = dolar[2]
     divisa = "Pesos Argentinos";
-    monto = float(input(frase(divisa)))
 
 else:
     print("Ingrese un tipo de moneda válido")
     exit()
 
+monto = float(input(frase(divisa)))
 
 conversor(moneda, monto)
 
