@@ -1,18 +1,23 @@
 cop = 3800
 arg = 99.70
 mxn = 20.56
+divisa = [" ","Colombianos", "Mexicanos", "Argentinos"]
 menu = """
+
+#############################################################################
 
 Bienvenido al conversor de monedas a dólares, elija una divisa para comenzar:
 
 1. Pesos Colombianos
 2. Pesos Mexicanos
-3. Pesos argeninos
+3. Pesos Argeninos
+
+#############################################################################
 
 """
+opcion = input(menu)
 
-opcion = input(menu);
-monto = float(input("¿Cuanto quiere dinero quiere convertir?"))
+monto = float(input("¿Cuantos pesos "+ divisa[int(opcion)] + " quiere quiere convertir?: "))
 
 if opcion == '1':
     
