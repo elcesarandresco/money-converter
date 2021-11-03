@@ -17,22 +17,23 @@ Bienvenido al conversor de monedas a dólares, elija una divisa para comenzar:
 """
 opcion = input(menu)
 
-monto = float(input("¿Cuantos pesos "+ divisa[int(opcion)] + " quiere quiere convertir?: "))
-
 if opcion == '1':
     
+    monto = float(input("¿Cuantos pesos "+ divisa[int(opcion)] + " quiere quiere convertir?: "))
     calculo = monto / cop
     calculo = round(calculo, 2)
     print("Usted tiene $" + str(calculo) + " USD")
 
 elif opcion == '2':
 
+    monto = float(input("¿Cuantos pesos "+ divisa[int(opcion)] + " quiere quiere convertir?: "))
     calculo = monto / mxn
     calculo = round(calculo, 2)
     print("Usted tiene $" + str(calculo) + " USD")    
 
 elif opcion == '3':
 
+    monto = float(input("¿Cuantos pesos "+ divisa[int(opcion)] + " quiere quiere convertir?: "))
     calculo = monto / arg
     calculo = round(calculo, 2)
     print("Usted tiene $" + str(calculo) + " USD")    
